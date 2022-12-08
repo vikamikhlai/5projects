@@ -8,4 +8,46 @@ body {
   font-family: 'Muli', sans-serif;
   overflow: hidden;
   margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: rgb(235, 200, 231);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  flex: 1;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 500ms ease-in-out;
+}
+
+.slide h3 {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+  letter-spacing: 3px;
+  opacity: 0;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
 }
