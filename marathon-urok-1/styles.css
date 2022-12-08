@@ -33,14 +33,16 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   transition: 500ms ease-in-out;
+  background-size: cover;
 }
 
 .slide h3 {
   position: absolute;
   left: 10px;
   bottom: 20px;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   opacity: 0;
+  font-size: 26px;
 }
 
 .slide.active {
@@ -49,5 +51,5 @@ body {
 
 .slide.active h3 {
   opacity: 1;
-  transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in 0.4s;
 }
